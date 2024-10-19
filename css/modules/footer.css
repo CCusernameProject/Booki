@@ -1,0 +1,110 @@
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+    --black-color: #000000;
+    --invisible: #0065fc00;
+}
+
+/* Ordinateur portable et Grand PC */
+@media (min-width: 1024.02px) {
+    footer {
+        margin-top: 20px;
+        background-color: #F2F2F2;
+        width: 100%;
+        max-width: 1340px;
+        height: 163px;
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+    }
+
+    footer div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #F2F2F2;
+        width: 100%;
+        max-width: 446.67px;
+        height: 100%;
+        max-height: 163px;
+        padding: 20px;
+    }
+    
+
+    footer div h3 {
+        width: 100%;
+        max-width: 446.67px;
+        margin-top: 10px;
+    }
+
+    footer div p {
+        width: 100%;
+        max-width: 446.67px;
+    }
+}
+
+/* Tablette */
+@media (max-width: 1024px) and (min-width: 768px) {
+    footer {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: calc(100% - 60px);
+        height: 163px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: var(--main-bg-color);
+        margin: 30px 30px 0px 30px;
+    }
+    
+    footer div {
+        width: 100%;
+        max-width: 204px;
+    }
+
+    footer div h3 {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 100%;
+        max-width: 204px;
+        height: 21px;
+        font-size: 18px;
+    }
+
+    footer div p {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 100%;
+        max-width: 204px;
+        font-size: 16px;
+    }
+
+
+}
+
+/* Téléphone */
+@media (max-width: 767.98px) {
+
+    footer {
+        margin-top: 30px;
+        background-color: var(--main-bg-color);
+        height: 461px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    footer div {
+        padding-left: 30px;
+    }
+
+    footer h3 {
+        padding: 5px 0px;
+    }
+
+    footer p {
+        padding: 5px 0px;
+    }
+}

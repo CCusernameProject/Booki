@@ -1,0 +1,132 @@
+/* Module */
+@import "./modules/appBar.css";
+@import "./modules/infoGroup.css";
+@import "./modules/hostingBox.css";
+@import "./modules/activitate.css";
+@import "./modules/footer.css";
+
+
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.IconBlue {
+    color: var(--main-color);
+}
+
+.IconNeutral {
+    color: var(--main-bg-color);
+}
+
+
+@media (min-width: 1024.02px) {
+
+    .main-container {
+        width: 100%;
+        max-width: 1440px;
+        min-width: 1024px;
+        height: 100%;
+        max-height: 1889.02px;
+        padding: 0 50px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+
+
+/* Tablette */
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .main-container {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+} 
+
+
+/* Téléphone */
+@media (max-width: 767.98px) {
+
+    .main-container {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
+    
+
+}
+
+@media (max-width: 320px) {
+    .main-container {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .headline {
+        width: 100%;
+    }
+
+    .searchBar {
+        width: 100%;
+    }
+
+    .FilterBar {
+        width: 100%;
+    }
+
+    .ButtonBar {
+        width: 100%;
+    }
+
+    .ButtonBar button {
+        width: 45%;
+    }
+
+    .infoBar {
+        width: 100%;
+    }
+
+    .ContenuDeLaCarte {
+        width: 180px;
+    }
+
+    .hebergementsTitle {
+        font-size: 13px;
+    }    
+}

@@ -1,0 +1,11 @@
+/* Ordinateur portable et Grand PC */
+@media (min-width: 1024.02px) {
+}
+
+/* Tablette */
+@media (max-width: 1024px) and (min-width: 768px) {
+}
+
+/* Téléphone */
+@media (max-width: 767.98px) {
+}

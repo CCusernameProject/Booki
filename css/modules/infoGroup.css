@@ -1,0 +1,592 @@
+* {
+    margin-top: 0px;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+    --black-color: #000000;
+    --invisible: #0065fc00;
+}
+
+/* Barre de recherche */
+
+input:focus {
+    outline: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 1;
+}
+
+.SearchBtn button:hover {
+    cursor: pointer;
+}
+
+/* Ordinateur portable et Grand PC */
+@media (min-width: 1024.02px) {
+    /* Info bar */
+    .Info-group {
+        margin-top: 35px;
+        width: 100%;
+        max-width: 1340px;
+        height: 281px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    /* Search Bar */
+    .searchBar {
+        display: flex;
+        flex-direction: row;
+        border: 1px;
+        background-color: var(--main-bg-color);
+        width: 100%;
+        max-width: 377px;
+        border-radius: 15px;
+    }
+    .Icon {
+        width: 50px;
+        height: 49px;
+        background-color: var(--main-bg-color);
+        border: 1px;
+        border-radius: 15px 0px 0px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Icon i {
+        width: 14px;
+        height: 18px;
+        color: black;
+    }
+    .Search input {
+        margin-top: 1px;
+        border: none;
+        text-align: center;
+        color: black;
+        width: 195px;
+        height: 45px;
+    }
+    ::placeholder {
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+        opacity: 1;
+    }
+    .SearchBtn {
+        width: 100%;
+        max-width: 132px;
+        height: 49px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .SearchBtn button {
+        width: 100%;
+        max-width: 132px;
+        height: 49px;
+        border-radius: 0px 15px 15px 0px;
+        background-color: var(--main-color);
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        border: none;
+    }
+
+
+    .Btn-Icon {
+        display: none;
+    }
+
+
+    /* Filter Bar */
+    
+    .FilterBar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        max-width: 758px;
+        height: 50px;
+    }
+
+    .TitleFilterBar {
+        width: 100%;
+        max-width: 54px;
+        height: 21px;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 15px 15px 15px 0px;
+        margin: 0;
+    }
+
+    .ButtonBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+    }
+
+    .ButtonBar button {
+        height: 100%;
+        padding: 4px 19px 4px 19px;
+        border-radius: 25px;
+        border: 2px solid var(--main-bg-color);
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition: 0.3s all;
+    }
+
+    .ButtonBar button:hover {
+        transition: 0.3s all;
+        background-color: var(--filter-bg-color);
+        cursor: pointer;
+    }
+
+    .ButtonBar button span {
+        margin: 0;
+        margin-left: 10px;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .ButtonBar button i {
+        font-size: 18px;
+    }
+
+    .Button1 {
+        width: 100%;
+        max-width: 173px;
+    }
+
+    .Button2 {
+        width: 100%;
+        max-width: 134px;
+    }
+
+    .Button3 {
+        width: 100%;
+        max-width: 170px;
+    }
+
+    .Button4 {
+        width: 100%;
+        max-width: 167px;
+    }
+
+
+
+
+    /* Info bar */
+    .infoBar {
+        width: 100%;
+        height: 24px;
+        display: flex;
+        flex-direction: row;
+    }
+    .infoBarFasfa {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+        padding: 0.5px;
+        border: 1px solid #D9D9D9;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p.TextInfoBar {
+        height: 24px;
+        display: flex;
+        align-items: center;
+        margin-left: 11px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+} 
+
+/* Tablette */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    /* Info bar */
+    .Info-group {
+        margin-top: 35px;
+        width: 100%;
+        max-width: 1024px;
+        height: 322px;
+        display: flex;
+        padding: 0px 50px;
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .headline {
+        height: 53px;
+    }
+    /* Search Bar */
+    .searchBar {
+        display: flex;
+        flex-direction: row;
+        border: 1px;
+        background-color: var(--main-bg-color);
+        width: 377px;
+        height: 49px;
+        border-radius: 15px;
+    }
+    .Icon {
+        width: 50px;
+        height: 49px;
+        background-color: var(--main-bg-color);
+        border: 1px;
+        border-radius: 15px 0px 0px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Icon i {
+        width: 14px;
+        height: 18px;
+        color: black;
+    }
+    .Search input {
+        margin-top: 1px;
+        border: none;
+        text-align: center;
+        color: black;
+        width: 195px;
+        height: 45px;
+    }
+    ::placeholder {
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+        opacity: 1;
+    }
+    .SearchBtn {
+        width: 132px;
+        height: 49px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .SearchBtn button {
+        width: 132px;
+        height: 49px;
+        border-radius: 0px 15px 15px 0px;
+        background-color: var(--main-color);
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        border: none;
+    }
+
+    .Btn-Icon {
+        display: none;
+    }
+
+    /* Filter Bar */
+    .FilterBar {
+        display: flex;
+        flex-direction: column;
+        width: 668px;
+        height: 91px;
+    }
+
+    .TitleFilterBar {
+        width: 54px;
+        height: 21px;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 0px 15px 15px 0px;
+        margin: 0;
+    }
+
+    .ButtonBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+    }
+
+    .ButtonBar button {
+        height: 50px;
+        padding: 4px 19px 4px 19px;
+        border-radius: 25px;
+        border: 2px solid var(--main-bg-color);
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        transition: 0.3s all;
+    }
+
+    .ButtonBar button:hover {
+        transition: 0.3s all;
+        background-color: var(--filter-bg-color);
+        cursor: pointer;
+    }
+
+    .ButtonBar button span {
+        margin: 0;
+        margin-left: 10px;
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .ButtonBar button i {
+        font-size: 18px;
+    }
+
+    .Button1 {
+        width: 173px;
+    }
+
+    .Button2 {
+        width: 134px;
+    }
+
+    .Button3 {
+        width: 170px;
+    }
+
+    .Button4 {
+        width: 167px;
+    }
+
+    /* info bar */
+    .infoBar {
+        width: 100%;
+        height: 24px;
+        display: flex;
+        flex-direction: row;
+    }
+    .infoBarFasfa {
+        width: 24px;
+        height: 24px;
+        padding: 0.5px;
+        font-size: 10px;
+        border: 1px solid var(--main-bg-color);
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p.TextInfoBar {
+        height: 24px;
+        display: flex;
+        align-items: center;
+        margin-left: 11px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+} 
+
+/* Téléphone */
+@media (max-width: 767.98px) {
+    
+    .Info-group {
+        padding: 20px;
+        height: 432px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .headline {
+        width: 100%;
+        height: 79px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .headline h2 {
+        height: 52px;
+    }
+
+    .section-title {
+        font-size: clamp(20px, 100%, 22px);
+    }
+
+    .headline p {
+        height: 19px;
+    }
+
+    /* Search Bar */
+    .SearchBarDiv {
+        width: 100%;
+    }
+
+    .searchBar {
+        width: 100%;
+        max-width: 345px;
+        height: 49px;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid var(--main-bg-color);
+        border-radius: 15px;
+    }
+
+    .Icon {
+        width: 50px;
+        height: 100%;
+        background-color: var(--main-bg-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--main-bg-color);
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    .Icon i {
+        color: var(--black-color);
+        font-size: 18px;
+    }
+
+    .Search input {
+        width: 236px;
+        height: 43px;
+        border: none;
+    }
+
+    ::placeholder {
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+        opacity: 1;
+        padding: 20px;
+    }
+
+    .SearchBtn {
+        width: 49px;
+        height: 49px;
+        background-color: var(--main-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--main-color);
+        border-radius: 15px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
+
+    .SearchBtn button {
+        border: none;
+        background-color: var(--main-color);
+    }
+
+
+    .SearchBtn button i {
+        color: white;
+    }
+
+    .Btn-Text {
+        display: none;
+    }
+
+    /* Filter Bar */
+    .FilterBar {
+        width: 100%;
+        margin-left: 20px;
+        height: 161px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .TitleFilterBar {
+        height: 21px;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .ButtonBar {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .ButtonBar button {
+        width: 45%;
+        height: 50px; 
+        border: 2px solid var(--main-bg-color);
+        border-radius: 25px;
+        background-color: white;
+        transition: 0.3s all;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .ButtonBar button:hover {
+        transition: 0.3s all;
+        background-color: var(--filter-bg-color);
+    }
+
+    .ButtonBar button i {
+        font-size: 22px;
+    }
+
+    .ButtonBar button span {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .Button1 {
+        order: 1;
+    }
+
+    .Button2 {
+        order: 3;
+    }
+
+    .Button3 {
+        order: 2;
+    }
+
+    .Button4 {
+        order: 4;
+    }
+
+    /* Info Bar */
+
+    .infoBar {
+        width: 100%;
+        height: 38px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .infoBarFasfa {
+        width: 24px;
+        height: 24px;
+        font-size: 10px;
+        border: 1px solid var(--main-bg-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .TextInfo {
+        margin-left: 10px;
+        width: 301px;
+        height: 38px;
+    }
+}
